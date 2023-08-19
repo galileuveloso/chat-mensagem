@@ -23,6 +23,7 @@ namespace ChatMensagem.Api.Features.ChatFeature.Hubs
         {
             var command = Context.ToInserirUsuarioCommand();
             await _mediator.Send(command);
+            //TODO - Notificar o usuario do Id Dele
             await base.OnConnectedAsync();
         }
 
