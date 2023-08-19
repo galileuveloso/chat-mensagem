@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using ChatMensagem.Api.Features.MensagemFeature.Commands;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatMensagem.Api.Features.MensagemFeature
@@ -15,6 +17,14 @@ namespace ChatMensagem.Api.Features.MensagemFeature
         )
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+        }
+
+        //TODO - Remover
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] InserirMensagemCommand request, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(request, cancellationToken));
         }
     }
 }
