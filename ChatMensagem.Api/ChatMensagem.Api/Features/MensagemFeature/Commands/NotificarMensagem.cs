@@ -34,7 +34,7 @@ namespace ChatMensagem.Api.Features.MensagemFeature.Commands
         {
             if (request is null)
                 throw new ArgumentNullException(MessageHelper.NullFor<NotificarMensagemCommand>());
-
+            
             //TODO - colocar o identificar do hub num lugar centralizado
             await _hubContext.Clients.Group(request.ChatId.ToString()).SendAsync("hub/chat", request, request);
 
