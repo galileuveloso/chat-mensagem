@@ -41,12 +41,12 @@ namespace ChatMensagem.Api.Features.ChatFeature.Commands
             //TODO - implementar logica para pegar o Id de Conexao do Usuario
             string connectionId = "Connection do Usuario";
 
-            await InserverChat(request, connectionId, cancellationToken);
+            await InscreverChat(request, connectionId, cancellationToken);
 
             return request.ToInscreverChatResponse();
         }
 
-        private async Task InserverChat
+        private async Task InscreverChat
         (
             InscreverChatCommand request,
             string connectionId,

@@ -12,5 +12,14 @@ namespace ChatMensagem.Api.Extensions.Features
             var response = FeatureExtensions.Convert<InscreverChatCommand, InscreverChatResponse>(request);
             return response;
         }
+
+        public static DesinscreverChatResponse ToDesinscreverChatResponse
+        (
+            this DesinscreverChatCommand request
+        )
+        {
+            var response = FeatureExtensions.Convert<DesinscreverChatCommand, DesinscreverChatResponse>(request);
+            return response;
+        }
     }
 }

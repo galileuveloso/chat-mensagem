@@ -26,5 +26,13 @@ namespace ChatMensagem.Api.Features.ChatFeature
         {
             return Ok(await _mediator.Send(request, cancellationToken));
         }
+
+        //TODO - Remover
+        [AllowAnonymous]
+        [HttpPost("desinscrever")]
+        public async Task<IActionResult> Post([FromBody] DesinscreverChatCommand request, CancellationToken cancellationToken)
+        {
+            return Ok(await _mediator.Send(request, cancellationToken));
+        }
     }
 }
