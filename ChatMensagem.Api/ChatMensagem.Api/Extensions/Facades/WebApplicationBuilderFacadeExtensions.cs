@@ -13,6 +13,7 @@ namespace ChatMensagem.Api.Extensions.Facades
             builder.AddMassTransit();
             builder.AddMemoryCacheService();
             builder.AddSignalR();
+            builder.AddDatabase();
         }
     }
 }

@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ChatMensagem.Dados\ChatMensagem.Dados.csproj" />
     <ProjectReference Include="..\ChatMensagem\ChatMensagem.csproj" />
   </ItemGroup>
 

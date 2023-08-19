@@ -1,4 +1,6 @@
-﻿namespace ChatMensagem.Api.Extensions.Generics
+﻿using ChatMensagem.Dados.Extensions.Facades;
+
+namespace ChatMensagem.Api.Extensions.Generics
 {
     public static class WebApplicationBuilderExtensions
     {
@@ -40,6 +42,12 @@
         public static void AddSignalR(this WebApplicationBuilder builder)
         {
             builder.Services.AddSignalR();
+        }
+
+        public static void AddDatabase(this WebApplicationBuilder builder)
+        {
+            string connectionString = builder.Configuration.GetValue<string>("ConnectionStrings:DbContext");
+            builder.Services.AddPostgresDatabase(connectionString);
         }
     }
 }

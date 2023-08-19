@@ -1,4 +1,6 @@
-﻿namespace ChatMensagem.Api.Extensions.Generics
+﻿using ChatMensagem.Dados.Extensions.Facades;
+
+namespace ChatMensagem.Api.Extensions.Generics
 {
     public static class WebApplicationExtensions
     {

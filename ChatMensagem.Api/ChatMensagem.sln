@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMensagem", "ChatMensage
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatMensagem.Api", "ChatMensagem.Api\ChatMensagem.Api.csproj", "{B2F173E7-9805-4AB3-AB0D-1A45DAA72C9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatMensagem.Dados", "ChatMensagem.Dados\ChatMensagem.Dados.csproj", "{02569060-3C20-47C3-A1A6-98EB735D451E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B2F173E7-9805-4AB3-AB0D-1A45DAA72C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2F173E7-9805-4AB3-AB0D-1A45DAA72C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2F173E7-9805-4AB3-AB0D-1A45DAA72C9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02569060-3C20-47C3-A1A6-98EB735D451E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02569060-3C20-47C3-A1A6-98EB735D451E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02569060-3C20-47C3-A1A6-98EB735D451E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02569060-3C20-47C3-A1A6-98EB735D451E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
