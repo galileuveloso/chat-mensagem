@@ -1,5 +1,5 @@
 ﻿using ChatMensagem.Api.Extensions.Generics;
-using ChatMensagem.Api.Features.MensagemFeature.Hubs;
+using ChatMensagem.Api.Features.ChatFeature.Hubs;
 
 namespace ChatMensagem.Api.Extensions.Facades
 {
@@ -18,7 +18,7 @@ namespace ChatMensagem.Api.Extensions.Facades
 
         public static void MapHubs(this WebApplication app)
         {
-            app.MapHub<MensagemHub>("/hub/mensagem");
+            app.MapHub<ChatHub>("/hub/chat");
         }
     }
 }
