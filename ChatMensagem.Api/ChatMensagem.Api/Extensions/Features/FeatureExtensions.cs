@@ -27,6 +27,7 @@ namespace ChatMensagem.Api.Extensions.Features
         public static T ToDomain<F, T>(F from) where F : class where T : Entity, new()
         {
             var entity = Convert<F, T>(from);
+            entity.IdExterno = Guid.NewGuid();
             entity.DataCadastro = DateTime.Now;
             return entity;
         }
